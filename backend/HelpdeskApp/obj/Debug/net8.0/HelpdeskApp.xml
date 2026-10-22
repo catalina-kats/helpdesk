@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelpdeskApp</name>
+    </assembly>
+    <members>
+        <member name="M:HelpdeskApp.Controllers.CommentController.GetByTicketId(System.Guid)">
+            <summary>
+            Gets a list of comments by ticket Id.
+            </summary>
+            <param name="id">Ticket id.</param>
+            <returns>A list of comments.</returns>
+            <response code="200">Comments returned successfully.</response>
+        </member>
+        <member name="M:HelpdeskApp.Controllers.CommentController.Create(System.Guid,HelpdeskApp.DTO.CreateCommentDTO)">
+            <summary>
+            Create a comment
+            </summary>
+            <param name="id">Ticket id.</param>
+            <returns>Comment created.</returns>
+            <response code="201">Comment created successfully.</response>
+        </member>
+        <member name="M:HelpdeskApp.Controllers.TicketController.GetAll(HelpdeskApp.Query.Query,System.Threading.CancellationToken)">
+            <summary>
+            Fetch tickets by filter
+            </summary>
+            <param name="q">Pagination and filter options.</param>
+            <param name="ct">Cancellation token.</param>
+            <returns>Paginated list of tickets.</returns>
+            <response code="200">Tickets fetched successfully.</response>
+        </member>
+        <member name="M:HelpdeskApp.Controllers.TicketController.GetById(System.Guid)">
+            <summary>
+            Fetch ticket by id
+            </summary>
+            <returns>Ticket.</returns>
+            <response code="200">Ticket fetched successfully.</response>
+        </member>
+        <member name="M:HelpdeskApp.Controllers.TicketController.Update(System.Guid,HelpdeskApp.DTO.UpdateTicketDTO)">
+            <summary>
+            Update ticket
+            </summary>
+            <returns>Ticket updated.</returns>
+            <response code="200">Ticket updated successfully.</response>
+        </member>
+        <member name="M:HelpdeskApp.Controllers.TicketController.UpdateStatus(System.Guid,HelpdeskApp.DTO.UpdateTicketStatusDTO)">
+            <summary>
+            Update status of ticket
+            </summary>
+            <returns>Ticket status updated.</returns>
+            <response code="200">Ticket status updated successfully.</response>
+        </member>
+        <member name="M:HelpdeskApp.Controllers.TicketController.Create(HelpdeskApp.DTO.CreateTicketDTO)">
+            <summary>
+            Create a ticket
+            </summary>
+            <returns>Ticket created.</returns>
+            <response code="201">Ticket created successfully.</response>
+        </member>
+        <member name="T:HelpdeskApp.Migrations.init">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HelpdeskApp.Migrations.AddBlogCreatedTimestamp">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.AddBlogCreatedTimestamp.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.AddBlogCreatedTimestamp.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.AddBlogCreatedTimestamp.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HelpdeskApp.Migrations.statusfield">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.statusfield.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.statusfield.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HelpdeskApp.Migrations.statusfield.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
